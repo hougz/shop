@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="renren-fast" />
+        <module name="renren-generator" />
+        <module name="shops-common" />
+        <module name="shops-coupon" />
+        <module name="shops-gateway" />
+        <module name="shops-list" />
+        <module name="shops-member" />
+        <module name="shops-message" />
+        <module name="shops-order" />
+        <module name="shops-pay" />
+        <module name="shops-product" />
+        <module name="shops-seckill" />
+        <module name="shops-ware" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="renren-fast" target="1.8" />
+      <module name="renren-generator" target="1.8" />
+      <module name="shops-common" target="1.5" />
+      <module name="shops-coupon" target="1.8" />
+      <module name="shops-gateway" target="1.8" />
+      <module name="shops-list" target="8" />
+      <module name="shops-member" target="1.8" />
+      <module name="shops-message" target="1.8" />
+      <module name="shops-order" target="1.8" />
+      <module name="shops-pay" target="1.5" />
+      <module name="shops-product" target="1.8" />
+      <module name="shops-seckill" target="1.8" />
+      <module name="shops-ware" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="renren-fast" options="-parameters" />
+      <module name="renren-generator" options="-parameters" />
+      <module name="shops-coupon" options="-parameters" />
+      <module name="shops-gateway" options="-parameters" />
+      <module name="shops-member" options="-parameters" />
+      <module name="shops-message" options="-parameters" />
+      <module name="shops-order" options="-parameters" />
+      <module name="shops-product" options="-parameters" />
+      <module name="shops-seckill" options="-parameters" />
+      <module name="shops-ware" options="-parameters" />
+    </option>
+  </component>
+</project>

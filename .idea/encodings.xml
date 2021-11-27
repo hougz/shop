@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/renren-fast" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/renren-generator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shops-coupon" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shops-easycode" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shops-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shops-member" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shops-message" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shops-order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shops-product" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shops-seckill" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shops-ware" charset="UTF-8" />
+  </component>
+</project>

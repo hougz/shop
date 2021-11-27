@@ -1,0 +1,50 @@
+
+spring:
+  application:
+    name: shops-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        #将路径为Path=/api/product转发shops-product微服务
+        - id: product_route
+          uri: lb://shops-product
+          predicates:
+            - Path=/api/product/**
+          filters:
+            - RewritePath=/api/(?<segment>/?.*),/$\{segment}
+        #将路径为Path=/api/order转发shops-order微服务
+        - id: order_route
+          uri: lb://shops-order
+          predicates:
+            - Path=/api/order/**
+          filters:
+            - RewritePath=/api/(?<segment>/?.*),/$\{segment}
+        #将路径为Path=/api/member转发shops-member微服务
+        - id: member_route
+          uri: lb://shops-member
+          predicates:
+            - Path=/api/member/**
+          filters:
+            - RewritePath=/api/(?<segment>/?.*),/$\{segment}
+        #将路径为Path=/api/seckill转发shops-seckill微服务
+        - id: seckill_route
+          uri: lb://shops-seckill
+          predicates:
+            - Path=/api/seckill/**
+          filters:
+            - RewritePath=/api/(?<segment>/?.*),/$\{segment}
+        #将路径为Path=/api/**转发至后台管理
+        - id: admin_route
+          uri: lb://renren-fast
+          predicates:
+            - Path=/api/**
+          filters:
+            - RewritePath=/api/(?<segment>/?.*), /renren-fast/$\{segment}
+server:
+  port: 88

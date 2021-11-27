@@ -1,0 +1,27 @@
+ipAddr: 127.0.0.1
+server:
+  port: 2500
+spring:
+  application:
+    name: shops-seckill
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 500
+        min-idle: 0
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8080
+  rabbitmq:
+    virtual-host: /
+    host: 127.0.0.1
