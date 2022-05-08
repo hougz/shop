@@ -28,8 +28,8 @@ public class SendSmsServiceController {
     private static final String domain = "dysmsapi.aliyuncs.com";
 
     /* 此处需要替换成开发者自己的accessKeyId和accessKeySecret(在阿里云访问控制台寻找) */
-    private static final String accessKeyId = "LTAIzKsog6oTwYmK";
-    private static final String accessKeySecret = "RCWVrDiVszkARu99a9pl6AmOzwTJLz";
+    private static final String accessKeyId = "";
+    private static final String accessKeySecret = "";
 
     /* 短信发送 */
     @GetMapping("{phone}")

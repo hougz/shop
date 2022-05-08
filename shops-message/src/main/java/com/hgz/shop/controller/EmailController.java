@@ -16,13 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/email")
 public class EmailController {
 
-    @Autowired
-    private JavaMailSender mailSender;
-
-    @Value("${spring.mail.username}")
-    private String from;
-
-    @GetMapping
+   /* @GetMapping
     public R<?> sendemail(){
         SimpleMailMessage mailMessage=new SimpleMailMessage();
         //发件人
@@ -34,6 +28,6 @@ public class EmailController {
         mailMessage.setText("你好");
         mailSender.send(mailMessage);
         return R.ok("200");
-    }
+    }*/
 
 }
